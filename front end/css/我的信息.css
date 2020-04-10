@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+/*注册界面*/
+	/*设置总体样式*/
+		*{
+			margin: 0;
+			padding: 0;
+			color: #888888;
+		}
+		/*背景颜色*/
+		body{
+			background:url( ../image/cf190ca79c957b1720e7564855744f5f.jpg);
+			background-size: 100% 100%;
+		}
+		/*页头部分*/
+		header .headContainer{
+			width:100%;
+			height: 70px;
+			background: #576574;
+		}
+		header .headContainer .headBackground{
+			width: 100%;
+			height:60px;
+			background: #33CC99;
+		}
+		header .headContainer .headBackground .logo{
+			width: 80px;
+			height: 60px;
+			float: left;
+			margin-left: 30px;
+			margin-top:15px;
+		}
+		header .headContainer .homePage{
+			width: 90px;
+			height: 50px;
+			float: right;
+			margin-right: 50px;
+			margin-top: 13px;
+		}
+		/*主体部分*/
+		.mainContainer{
+			height: 645px;
+			width: 60%;
+			margin: 0 auto;
+			margin-top:50px;
+			background: #FFFFFF;
+			border-radius: 20px 20px 0 0;
+		}
+		.mainContainer .welcome{
+			width: 225px;
+			height: 80px;
+			float:left;
+			margin-top:30px;
+			margin-left: 55px;
+		}
+		.mainContainer .row{
+			width: 750px;
+			color: #737373;
+			position: absolute;
+			top:250px;
+			left: 360px;
+		}
+		.mainContainer form .inputs{
+			margin: 0 auto;
+			width: 80%;
+			height: 490px;
+			margin-top: 10px;
+		}
+		.mainContainer form .inputs .lableUserName{
+			position:  absolute;
+			top: 300px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lablePassWord{
+			position:absolute;
+			top:350px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lablePassWordConfirm{
+			position:absolute;
+			top: 400px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lablePhoneNumber{
+			position:absolute;
+			top: 450px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lableEmail{
+			position:absolute;
+			top: 500px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lableTrueName{
+			position:absolute;
+			top: 550px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lableConfirmFile{
+			position:absolute;
+			top: 600px;
+			left:500px;
+		}
+		.mainContainer form .inputs .lableWord{
+			position:absolute;
+			top: 678px;
+			left:750px;
+			font-size: 12px;
+		}
+		.mainContainer form .inputs #userName{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:300px;
+		}
+		.mainContainer form .inputs #passWord{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:350px;
+		}
+		.mainContainer form .inputs #confirm{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:400px;
+		}
+		.mainContainer form .inputs #phoneNumber{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:450px;
+		}
+		.mainContainer form .inputs #emailAdress{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:500px;
+		}
+		.mainContainer form .inputs #trueName{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:550px;
+		}
+		.mainContainer form .inputs #confirmFile{
+			width: 390px;
+			height: 30px;
+			position:absolute;
+			left:600px;
+			top:600px;
+		}
+		.mainContainer form .inputs #registerConfirm{
+			width: 70px;
+			height: 30px;
+			position:absolute;
+			left:650px;
+			top:670px;
+			background-color: #428bca;  
+       		border-color: #357ebd;  
+       		color: #fff;  
+       		-moz-border-radius: 10px;  
+        	-webkit-border-radius: 10px;  
+        	border-radius: 5px; /* future proofing */  
+        	-khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        	text-align: center;  
+        	vertical-align: middle;  
+        	border: 1px solid transparent;  
+        	font-weight: 900;  
+        	font-size:14px;  
+			outline:none;
+		}
+.mainContainer form .inputs #registerConfirm:hover{
+	cursor: pointer;
+}
+
+#selfPhoto{
+	width: 120px;
+	height: 120px;
+	position: relative;
+
+	top: 50px;
+	left: 50px;
+	border-radius: 5px;
+}
+#selfPhoto img{
+	width: 100px;
+	height: 100px;
+}
+
+#clickChangePhoto{
+			width: 70px;
+			height: 30px;
+			position: relative;
+			left: 15px;
+			background-color: #428bca;  
+       		border-color: #357ebd;  
+       		color: #fff;  
+       		-moz-border-radius: 10px;  
+        	-webkit-border-radius: 10px;  
+        	border-radius: 5px; /* future proofing */  
+        	-khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        	text-align: center;  
+        	vertical-align: middle;  
+        	border: 1px solid transparent;  
+        	font-weight: 900;  
+        	font-size:14px;  
+			outline:none;
+			cursor: pointer;
+}

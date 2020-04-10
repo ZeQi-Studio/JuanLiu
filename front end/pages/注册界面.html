@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册界面</title>
+	<link rel="stylesheet" href="../css/注册界面.css">
+</head>
+
+<body>
+	<!--页头部分-->
+	<header>
+		<div class="headContainer">
+			<div class="headBackground">
+				<div class="logo">
+					<a href="index.html"><img src="../image/LOGO-white.png" width="100%" alt="logo"></a>
+				</div>
+			<div class="homePage">
+				<a href="index.html"><img src="../image/返回首页.png" width="100%" alt="homePage"></a>
+			</div>
+			</div>
+		</div>
+	</header>
+	<!--主体部分-->
+	<section class="mainContainer">
+		<div class="welcome" >
+			<img src="../image/欢迎注册.png" width="225px" alt="welcome">
+		</div>
+		<hr class="row">
+		<form action="">
+			<div class="inputs">
+				<span class="lableUserName">用户名</span>
+				<span class="lablePassWord">密码</span>
+				<span class="lablePassWordConfirm">确认密码</span>
+				<span class="lablePhoneNumber"><span style="color: #FF0004">*</span>联系电话</span>
+				<span class="lableEmail">邮箱</span>
+				<span class="lableTrueName"><span style="color: #FF0004">*</span>家庭住址</span>
+				<span class="lableConfirmFile"><span style="color: #FF0004">*</span>资质认证</span>
+				<span class="lableWord">(有<span style="color: #FF0004;">*</span>的为非必填项)</span>
+				<input type="text" id="userName">
+				<input type="password"  id="passWord">
+				<input type="password" id="confirm">
+				<input type="tel" id="phoneNumber">
+				<input type="email" id="emailAdress">
+				<input type="text" id="trueName">
+				<input type="file" id="confirmFile">
+				<input type="submit" value="提交注册" id="registerConfirm">
+			</div>
+		</form>
+	</section>
+</body>
+</html>

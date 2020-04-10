@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提交具体信息</title>
+	<link rel="stylesheet" href="../css/提交具体信息.css">
+</head>
+
+<body>
+	<!--页头部分-->
+	<div class="headContainer">
+		<header>
+			<div class="logo">
+				<a href="index.html"><img src="../image/LOGO-white.png" width="100%" alt="logo"></a>
+			</div>
+			<div class="searchBar">
+				<form action="">
+					<span class="searchlable"></span>
+					<input type="search" id="headSearchBar" placeholder="查询已有项目">
+				</form>
+			</div>
+			<div class="icons">
+				<ul>
+					<li class="weiBo"><a href="#"><img src="../image/微博.png" width="100%" alt="weiBo"></a></li>
+					<li class="weiXin"><a href="#"><img src="../image/微信.png" width="100%" alt="weiXin"></a></li>
+					<li class="qq"><a href="#"><img src="../image/QQ.png" width="100%" alt="qq"></a></li>
+					<li class="qZone"><a href="	#"><img src="../image/QQ空间.png" width="100%" alt="qZone"></a></li>
+				</ul>
+			</div>
+		</header>
+	</div>
+	<!--主体部分-->
+	<div id="midBar">
+		<div class="wrap" id="wrap">
+    		<ul id="pic">
+        		<li><img src="../image/1.png" alt=""></li>
+        		<li><img src="../image/2.png" alt=""></li>
+       			<li><img src="../image/3.png" alt=""></li>
+        		<li><img src="../image/4.png" alt=""></li>
+        		<li><img src="../image/5.png" alt=""></li>
+   		 	</ul>
+    		<ol id="list">
+        		<li class="on"></li>
+       			<li></li>
+        		<li></li>
+        		<li></li>
+        		<li></li>
+    		</ol>
+		</div>
+		<div class="info">
+		<table>
+            <tr >
+                <td class="col1">项目名称：</td>
+                <td class="col2"><span>“‘温暖衣冬’——为最需要的人送去温暖”</span></td>
+            </tr>
+            <tr>
+                <td class="col1">项目目标：</td>
+                <td class="col2"><span>100件8成新衣服</span></td>
+            </tr>
+            <tr style="height: 120px">
+                <td class="col1">项目简介：</td>
+                <td class="col2"><span>“‘温暖衣冬’——为最需要的人送去温暖”动员北京市民捐赠闲置的御寒外套,由大学生以志愿服务的形式利用假期返乡转赠给北京或外地贫困人员。活动旨在为外省家庭经济困难的群体，以及北京地区的进京务工青年及子女、一线工作人员等提供切实帮扶，为这部分因地区经济、自然灾害、意外事故等导致家庭贫困的群众，在冬季来临时，送上一件御寒衣物、一份暖暖的祝福。</span></td>
+            </tr>
+            <tr>
+                <td class="col1">项目完成度：</td>
+                <td class="col2"><progress value="70" max="100"></progress><span>70%</span></td>
+            </tr>
+        </table>
+        <div id="submitTable">
+        	<table>
+        		<tr>
+        			<td class="col1">我想捐助的数量:</td>
+        			<td class="col2"><input type="text" placeholder="请填入捐助的数目"></td>
+        		</tr>
+        		<tr>
+        			<td class="col1">您的姓名：</td>
+        			<td class="col2"><input type="text" placeholder="也可以为您的昵称"></td>
+        		</tr>
+				<tr>
+					<td class="col1">您的联系方式：</td>
+        			<td class="col2"><input type="text"></td>
+				</tr>
+				<tr>
+					<td class="col1">您期望的捐赠地点：</td>
+        			<td class="col2"><textarea  cols="18" rows="3" placeholder="默认地点为电子科技大学（清水河校区）学生活动中心"></textarea></td>
+				</tr>
+        	</table>
+			<div id="donateWords">
+				<span>捐助寄语：</span><br>
+				<textarea  id="bless" cols="35" rows="5" placeholder="你可以在这里写下你想说的话与祝福哟"></textarea>
+			</div>
+			<div id="button">
+				<input id="submit" type="button" value="提交">
+				<input id="reset" type="button" value="重置">
+				
+			</div>
+        </div>
+    </div>
+	</div>
+	
+</body>
+<script>
+	 window.onload = function() {
+     var wrap = document.getElementById('wrap'),
+         pic = document.getElementById('pic'),
+         list = document.getElementById('list').getElementsByTagName('li'),
+         index = 0,
+         timer = null;
+
+     // 若果有在等待的定时器，则清掉
+     if (timer) {
+         clearInterval(timer);
+         timer = null;
+     }
+
+     // 自动切换
+     timer = setInterval(autoPlay, 2000);
+
+     // 定义并调用自动播放函数
+     function autoPlay() {
+         index++;
+         if (index >= list.length) {
+             index = 0;
+         }
+         changeImg(index);
+     }
+
+     // 定义图片切换函数
+     function changeImg(curIndex) {
+         for (var j = 0; j < list.length; j++) {
+             list[j].className = "";
+         }
+         // 改变当前显示索引
+         list[curIndex].className = "on";
+         pic.style.marginTop = -220 * curIndex + "px";
+         index = curIndex;
+     }
+
+     // 鼠标划过整个容器时停止自动播放
+     wrap.onmouseover = function() {
+         clearInterval(timer);
+     }
+
+     // 鼠标离开整个容器时继续播放至下一张
+     wrap.onmouseout = function() {
+         timer = setInterval(autoPlay, 2000);
+     }
+
+     // 遍历所有数字导航实现划过切换至对应的图片
+     for (var i = 0; i < list.length; i++) {
+         list[i].id = i;
+         list[i].onmouseover = function() {
+             clearInterval(timer);
+             changeImg(this.id);
+         }
+     }
+ }
+</script>
+</html>

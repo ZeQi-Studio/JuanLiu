@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+/*我要捐赠界面*/
+/*设置总体样式*/
+		*{
+			margin: 0;
+			padding: 0;
+			/*border: 1px red solid;*/
+			font-family: source-sans-pro;
+			/*font-weight: bold;*/
+			font-size: 15px;
+		}
+		/*背景颜色*/
+		body{
+			background: #C9D6DF;
+			background-image: url(../image/12.jpg);
+			background-size: 100% 100%;
+
+		}
+
+		* input{
+			border-radius: 5px;
+		}
+		/*页头部分*/
+		.headContainer{
+			width: 100%;
+			height: 80px;
+			position: fixed;
+			background: #1dd1a1;
+
+		}
+		.headContainer header{
+			width: 100%;
+			height: 60px;
+			position: fixed;
+			background: #576574;
+		}
+		.headContainer header .logo{
+			width: 80px;
+			height: 50px;
+			float: left;
+			margin-left: 50px;
+			margin-top:15px;
+		}
+		.headContainer header .searchBar{
+			width: 500px;
+			height: 32px;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+		.headContainer header .searchBar .searchlable{
+			display: inline-block;
+			width: 100px;
+			color: #FFFFFF;
+			margin-left: 70px;
+			margin-top: 3px;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		.headContainer header .searchBar #headSearchBar{
+			width: 300px;
+			height: 30px;
+			float: right;
+			margin-top: 0px;
+			margin-right: 20px;
+		}
+		.headContainer header .icons{
+			width: 150px;
+			height: 50px;
+			position: absolute;
+			top: 15px;
+			right: 20px;
+		}
+		.headContainer header .icons ul li{
+			width: 20px;
+			list-style: none;
+			float: left;
+			margin-left:15px;
+			margin-top: 5px;
+		}
+		/*主体部分*/
+		.mainPart{
+			height: 1000px;
+			width: 100%;
+			padding-top:100px;
+		}
+		.mainPart .section1{
+			width: 60%;
+			height: 220px;
+			margin:0 auto;
+			margin-top: 30px;
+		}
+		.mainPart .section1 .image{
+			width: 40%;
+			height: 218px;
+			float: left;
+		}
+		.mainPart .section1 .info{
+			width: 59%;
+			height: 218px;
+			float: left;
+			background: #FFFFFF;
+			color: #7A7A7A;
+		}
+		/*共有的样式*/
+		.mainPart .section1 .info #donateButton,#donateButton1,#donateButton2,#donateButton3{
+			width: 45px;
+			height: 25px;
+			margin-left: 420px;
+		}
+		.mainPart .section1 .info table{
+			width:95%; 
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.mainPart .section1 .info table tr td{
+			width: 200px;
+			vertical-align: top;
+			height: 35px;
+		}
+		.mainPart .section1 .info .col1{
+			width: 35%;
+		}
+		.mainPart .section1 .info .col2{
+			width: 65%;
+		}
+		
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#midBar{
+	width: 70%;
+	height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../image/cf190ca79c957b1720e7564855744f5f.jpg);
+	background-size: 100% 100%;
+	border-radius: 20px;
+	-moz-box-shadow:0px 0px 20px #D9D94E; -webkit-box-shadow:0px 0px 20px #D9D94E; box-shadow:0px 0px 20px #D9D94E;
+}
+
+.wrap {
+	height:220px;
+	width:330px;
+	margin:60px auto;
+	position:absolute;
+	top: 70px;
+	left: 260px;
+	overflow:hidden;
+	border-radius: 20px;
+}
+.wrap ul {
+	position:absolute;
+}
+.wrap ul li {
+	height:220px;
+	list-style:none
+}
+.wrap ol {
+	position:absolute;
+	right:5px;
+	bottom:10px;
+}
+.wrap ol li {
+	height:10px;
+	width:10px;
+	background:#ddd;
+	border:1px solid #969591;
+	border-radius:50%;
+	margin-left:5px;
+	color:#959490;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+.wrap ol .on {
+	background:#8F9E9E;
+	color:#fff;
+}
+
+.info{
+	width: 60%;
+	height: 350px;
+	float: right;
+	background: #c8d6e5;
+	color: #7A7A7A;
+	margin-right: 30px;
+	margin-top: 90px;
+	border-radius: 20px;
+}
+
+.info table{
+	margin: 5px 60px 10px 30px;
+}
+
+.info table tr{
+	height: 60px;
+}
+
+.info table tr #line3{
+	height: 100px;
+}
+
+.info table .col1{
+	width: 17%;
+}
+
+#submitTable{
+	width: 850px;
+	height: 230px;
+	position: absolute;
+	background:#c8d6e5;
+	color: #7A7A7A;
+	top: 465px;
+	left: 350px;	
+	border-radius: 20px;
+}
+
+#submitTable table tr{
+	height: 40px;
+}
+
+#submitTable table .col1{
+	width: 50%;
+}
+
+#donateWords{
+	position: absolute;
+	left: 440px;
+	bottom: 90px;
+}
+
+#button{
+	position: absolute;
+	bottom: 30px;
+	right: 160px;
+}
+
+#submit{
+	margin-right: 40px;
+	width: 80px;
+	border-radius: 10px;
+	background: rgb(98,204,97);
+	color:white;
+}
+
+#reset{
+	width: 80px;
+	border-radius: 10px;
+	background: rgb(170,173,170);
+	color: white;
+}
+}

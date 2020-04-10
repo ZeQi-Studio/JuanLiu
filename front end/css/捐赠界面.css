@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+/*捐赠界面的css*/
+		/*设置总体样式*/
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			/*border: 1px red solid;*/
+		}
+body{
+	background:url(../image/12.jpg);
+}
+		/*页头样式*/
+		header .headContainer{
+			width: 100%;
+			height: 80px;
+			background:#1DD1A1;
+			position: fixed;
+		}
+		header .headContainer .headBackground{
+			width: 100%;
+			height: 60px;
+			background:#576574;
+			position:fixed;
+		}
+		header .headContainer .headBackground .logo{
+			width:80px;
+			float: left;
+			margin-left:35px;
+			margin-top:15px;
+		}
+		header .headContainer .headBackground .icons{
+			float: right;
+			width: 180px;
+			height: 40px;
+			margin-top:20px;
+			margin-right: 0px;
+		}
+		header .headContainer .headBackground .icons ul li{
+			list-style: none;
+			width: 20px;
+			float: left;
+			margin-left: 15px;
+		}
+		
+		/*主体样式*/
+		.mainPart{
+			width: 60%;
+			height: 700px;
+			margin: 0 auto;
+			padding-top: 145px;
+		}
+		.mainPart .banner{
+			width: 100%;
+			height:350px;
+			background: #E9CADB;
+			background: url( ../image/80.jpg);
+			background-size:100% 100%;
+			border-radius:20px 20px 0 0;
+		}
+		.mainPart .mainContainer{
+			
+			height: 350px;
+			width: 100%;
+			background: #1DD1A1;
+		}
+		
+		.mainPart .mainContainer .buttonContainer{
+			width: 690px;
+			height: 210px;
+			margin: 0 auto;
+			padding-top: 40px;
+		}
+		.mainPart .mainContainer .buttonContainer .exchange{
+			width: 140px;
+			padding-top: 5px;
+		}
+		.mainPart .mainContainer .buttonContainer ul li{
+			width: 150px;
+			height: 205px;
+			float: left;
+			margin-left:60px;
+			list-style: none;
+		}

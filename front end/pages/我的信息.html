@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的信息</title>
+	<link rel="stylesheet" href="../css/我的信息.css">
+</head>
+
+<body>
+	<!--页头部分-->
+	<header>
+		<div class="headContainer">
+			<div class="headBackground">
+				<div class="logo">
+					<a href="index.html"><img src="../image/LOGO-white.png" width="100%" alt="logo"></a>
+				</div>
+			<div class="homePage">
+				<a href="index.html"><img src="../image/返回首页.png" width="100%" alt="homePage"></a>
+			</div>
+			</div>
+		</div>
+	</header>
+	<!--主体部分-->
+	<section class="mainContainer">
+		<div class="welcome" >
+			<img src="../image/欢迎来到.png" width="225px" alt="welcome">
+		</div>
+		<hr class="row">
+		<div id="selfPhoto">
+			<img src="../image/择栖logo.png" alt="">
+			<input id="clickChangePhoto" type="submit" value="更改头像">
+			<h3>爱心值：<span>520</span></h3>
+		</div>
+		<form action="">
+			<div class="inputs">
+				<span class="lableUserName">用户名</span>
+				<span class="lablePassWord">密码</span>
+				<span class="lablePassWordConfirm">确认密码</span>
+				<span class="lablePhoneNumber"><span style="color: #FF0004">*</span>联系电话</span>
+				<span class="lableEmail">邮箱</span>
+				<span class="lableTrueName"><span style="color: #FF0004">*</span>详细地址</span>
+				<span class="lableConfirmFile"><span style="color: #FF0004">*</span>资质认证</span>
+				<span class="lableWord">(有<span style="color: #FF0004;">*</span>的为非必填项)</span>
+				<input type="text" id="userName" value="电子科技大学-择栖工作室">
+				<input type="password"  id="passWord" value="123456789">
+				<input type="password" id="confirm" value="123456789">
+				<input type="tel" id="phoneNumber" value="13755667788">
+				<input type="email" id="emailAdress" value="uestc_ZeqiStudio@163.com">
+				<input type="text" id="trueName" value="四川省成都市高新区西源大道2006号">
+				<input type="file" id="confirmFile">
+				<input type="submit" value="确认更改" id="registerConfirm">
+			</div>
+		</form>
+	</section>
+</body>
+</html>

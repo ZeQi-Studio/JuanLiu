@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>寻求帮助</title>
+	<link rel="stylesheet" href="../css/寻求帮助.css">
+</head>
+<body>
+	<header>
+	<div class="headContainer">
+		<div class="background">
+			<div class="logo">
+				<a href="index.html"><img src="../image/LOGO-white.png" width="100%" alt="logo"></a>
+			</div>
+			<div class="icons">
+				 <lu>
+					 <li class="weiBo"><a href="#"><img src="../image/微博.png" width="100%" alt="weiBo"></a></li>
+					 <li class="qq"><a href="#"><img src="../image/QQ.png" width="100%" alt="qq"></a></li>
+					 <li class="weChat"><a href="#"><img src="../image/微信.png" width="100%" alt="weChat"></a></li>
+					 <li class="qZone"><a href="#"><img src="../image/QQ空间.png" width="100%" alt="qZone"></a></li>
+				 </lu>
+			</div>
+		</div>
+	</div>
+	</header>
+	
+	<section class="mainBody">
+		<div class="image">
+		<img src="../image/寻求帮助png.png" width="100%" alt="">
+		</div>
+		<hr class="line">
+		<form action="">
+		<table class="formTable">
+			<tr>
+				<td class="col1">真实姓名:</td>
+				<td class="col2"><input type="text" id="trueName"></td>
+			</tr>
+			<tr>
+				<td class="col1">年龄:</td>
+				<td class="col2"><input type="number" id="age"></td>
+			</tr>
+			<tr>
+				<td class="col1">性别:</td>
+				<td class="col2">&nbsp;&nbsp;&nbsp;男&nbsp;<input id="selectMan" type="radio" name="sex" value="man">&nbsp;&nbsp;&nbsp;&nbsp;女&nbsp;<input type="radio" name="sex" value="woman" id="selectWoman"></td>
+			</tr>
+			<tr>
+				<td class="col1">截止日期:</td>
+				<td class="col2"><input type="date" id="deadLine"></td>
+			</tr>
+			<tr>
+				<td class="col1">手机号码:</td>
+				<td class="col2"><input type="text" id="phoneNumber"></td>
+			</tr>
+			<tr>
+				<td class="col1">QQ号码:</td>
+				<td class="col2"><input type="text" id="QQNumber"></td>
+			</tr>
+			<tr>
+				<td class="col1">困难类型(目前只支持少许请求):</td>
+				<td class="col2">
+					<select name="object" id="material">
+						<option value="none、">——————请选择捐物类别———————</option>
+						<option value="clothes">衣物</option>
+						<option value="books">书籍</option>
+						<option value="studyTools">学习用品</option>
+						<option value="sportGoods">体育用品</option>
+						<option value="electronicProduct">电子产品</option>
+						<option value="furniture">家具</option>
+					</select>
+					<input type="number" placeholder="数量" id="pickNumber"> 
+				</td>
+			</tr>
+			<tr>
+				<td class="col1">详细地址:</td>
+				<td class="col2"><input type="text" id="address"></td>
+			</tr>
+			<tr>
+				<td class="col1" >资质认证:</td>
+				<td class="col2"><input type="file" id="identification"><br> <input type="submit" value="提交" id="tijiao"></td>
+			</tr>
+			<tr></tr>
+		</table>
+		</form>
+	</section>
+	
+	
+</body>
+</html>

@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+/*我要捐赠界面*/
+/*设置总体样式*/
+		*{
+			margin: 0;
+			padding: 0;
+			/*border: 1px red solid;*/
+			font-family: source-sans-pro;
+			/*font-weight: bold;*/
+			font-size: 15px;
+		}
+		/*背景颜色*/
+		body{
+			background:url( ../image/12.jpg);
+			/*background-size: 100% 100%*/
+		}
+		/*页头部分*/
+		.headContainer{
+			width: 100%;
+			height: 80px;
+			position: fixed;
+			background: #1dd1a1;
+		}
+		.headContainer header{
+			width: 100%;
+			height: 60px;
+			position: fixed;
+			background: #576574;
+		}
+		.headContainer header .logo{
+			width: 80px;
+			height: 50px;
+			float: left;
+			margin-left: 50px;
+			margin-top:15px;
+		}
+		.headContainer header .searchBar{
+			width: 500px;
+			height: 32px;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+		.headContainer header .searchBar .searchlable{
+			display: inline-block;
+			width: 100px;
+			color: #FFFFFF;
+			margin-left: 70px;
+			margin-top: 3px;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		.headContainer header .searchBar #headSearchBar{
+			width: 300px;
+			height: 30px;
+			float: right;
+			margin-top: 0px;
+			margin-right: 20px;
+		}
+		.headContainer header .icons{
+			width: 150px;
+			height: 50px;
+			position: absolute;
+			top: 15px;
+			right: 20px;
+		}
+		.headContainer header .icons ul li{
+			width: 20px;
+			list-style: none;
+			float: left;
+			margin-left:15px;
+			margin-top: 5px;
+		}
+		/*主体部分*/
+		.mainPart{
+			height: 1000px;
+			width: 100%;
+			padding-top:100px;
+			border-radius: 10px;
+		}
+		.mainPart .section1{
+			width: 60%;
+			height: 220px;
+			margin:0 auto;
+			margin-top: 30px;
+			border-radius: 10px;
+		}
+		.mainPart .section1 .image{
+			width: 40%;
+			height: 218px;
+			float: left;
+			border-radius: 10px;
+		}
+		.mainPart .section1 .info{
+			width: 59%;
+			height: 218px;
+			float: left;
+			background: #FFFFFF;
+			color: #7A7A7A;
+			border-radius: 0px 10px 10px 0;
+		}
+		/*共有的样式*/
+		.mainPart .section1 .info #donateButton,#donateButton1,#donateButton2,#donateButton3{
+			width: 45px;
+			height: 25px;
+			margin-left: 420px;
+			background-color: #428bca;  
+       		border-color: #357ebd;  
+       		color: #fff;  
+       		-moz-border-radius: 10px;  
+        	-webkit-border-radius: 10px;  
+        	border-radius: 5px; /* future proofing */  
+        	-khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        	text-align: center;  
+        	vertical-align: middle;  
+        	border: 1px solid transparent;  
+        	font-weight: 900;  
+        	font-size:14px; 
+			outline:none;
+		}
+		.mainPart .section1 .info #donateButton,#donateButton1,#donateButton2,#donateButton3:hover{
+			cursor: pointer;
+		}
+		.mainPart .section1 .info table{
+			width:95%; 
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.mainPart .section1 .info table tr td{
+			width: 200px;
+			vertical-align: top;
+			height: 35px;
+		}
+		.mainPart .section1 .info .col1{
+			width: 35%;
+		}
+		.mainPart .section1 .info .col2{
+			width: 65%;
+		}
